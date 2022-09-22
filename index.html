@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
+    <script
+        src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+        crossorigin="anonymous"></script>
     <style>
         
     </style>
@@ -13,20 +17,33 @@
 <body>
     <header>
         <h1>活動衣服</h1>>
-        <div class="cart hidden"></div> <!---預設記數隱藏-->>
+        <div class="cart">
+            <h2>
+                0
+            </h2>
+        </div> <!---預設記數隱藏-->>
     </header>
     <body>
         <div class="seleciton">
-            <li><input type="checkbox" name="" id="">S</li>
-            <li><input type="checkbox" name="" id="">M</li>
-            <li><input type="checkbox" name="" id="">L</li>
-            <li><input type="checkbox" name="" id="">XL</li>
-            <li><input type="checkbox" name="" id="">2XL</li>
-            <li><input type="checkbox" name="" id="">3XL</li>
+            <li><input type="checkbox" name="" id="" class="checkBox"><p> S </p><input type="text" class="count" value="0"></li>
+            <li><input type="checkbox" name="" id="" class="checkBox"><p>M </p><input type="text" class="count" value="0"></li>
+            <li><input type="checkbox" name="" id="" class="checkBox"><p>L</p> <input type="text" class="count" value="0"></li>
+            <li><input type="checkbox" name="" id="" class="checkBox"><p>XL</p> <input type="text" class="count" value="0"></li>
+            <li><input type="checkbox" name="" id="" class="checkBox"><p>2XL</p> <input type="text" class="count" value="0"></li>
+            <li><input type="checkbox" name="" id="" class="checkBox"><p>3XL</p> <input type="text" class="count" value="0"></li>
+            <div> <input type="submit" class="g1a2"> </div>
         </div>
-        <input type="submit" class="g1a2">
+        
+        <div class="cartPage hidden">
+            <a class="close"> X </a> <!---關閉按鈕-->
+            <ul>
+                
+            </ul>
+        </div>
     </body>
     <script src="./WangYa.js"></script>
+
+    
 </body>
 
 </html>

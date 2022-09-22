@@ -7,6 +7,7 @@ li {
 }
 body {
     max-width: 1200px;
+    min-width: 960px;
     size: 12px;
 }
 h1 {
@@ -26,9 +27,9 @@ header {
 
 header h1 {
     margin-top: 0;
-    width: 60%;
+    width: 58.9%;
     color: #fff;
-    text-align: center;
+    text-align: right;
     line-height: 40px;
     font-family: '微軟正黑體','標楷體';
 }
@@ -41,12 +42,13 @@ header h1 {
     width: 35px;
     height: 35px;
     border-radius: 45px;
-    background-color: #fff;
+    background-color: #ddd;
 }
 
 .cart::after {
     /*購物車紅標圖案*/
     content: '';
+    
     width: 15px;
     height: 15px;
     border-radius: 15px;
@@ -54,8 +56,31 @@ header h1 {
     position: absolute;
     top: -3px;
     left:54.5%;
-    z-index: 1;
 }
+
+.cart h2 { /* 記數 */
+    margin: 0;
+    padding: 0;
+    line-height: 35px;
+    text-align: center;
+    size: 8px;
+    color: rgb(92, 35, 47);
+}
+
+.cart:hover {
+    background-color: #fff;
+}
+
+.cart:active {
+    background-color: #777;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/*  填表單  */
 
 .seleciton {
     padding: 5px;
@@ -67,8 +92,101 @@ header h1 {
 }
 
 .seleciton > li {
-    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 35%;
     height: 30px;
     margin: 0 auto;
 
+}
+
+.seleciton li p {
+    width: 14px;
+    height: 14px;
+}
+.seleciton  .count {
+    text-align: center;
+    margin-left: 15px;
+    width: 35px;
+    height: 15px;
+}
+
+
+/* 送出按鈕 */
+
+.seleciton div {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+.g1a2 {
+    align-items: center;
+    margin: 0 auto;
+    width: 180px;
+    height: 30px;
+    border-radius: 25px;
+    border: none;
+    background-color: #777;
+    color: #ddd;
+    font-family: '微軟正黑體','標楷體';
+    font-weight: 800;
+    font-size: 1.2rem;
+    transition: 0.3s ease;
+}
+
+.g1a2:hover {
+    background-color: #999;
+}
+.g1a2:active {
+    background-color: #444;
+}
+
+
+/* 購物車頁面 */
+
+.cartPage {
+    width: 40%;
+    height: 950px;
+    position: fixed;
+    border-radius: 30px;
+    left: 30%;
+    top: 90px;
+    background-color: #777;
+}
+
+.cartPage h1 {
+    width: 100%;
+    text-align: center;
+    line-height: 650px;
+}
+
+.cartPage li {
+    font-size: 3.5rem;
+    text-align: center;
+}
+.cartPage .close {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: rgb(131, 33, 50);
+    font-family: 'Calibri';
+    font-weight: 800;
+    font-size: 32px;
+    color: #ddd;
+    line-height: 30px;
+    text-align: center;
+    position: relative;
+    float: right;
+    right: -50px;
+    top: -40px;
+}
+
+.cartPage .close:hover {
+    background-color: rgb(177, 75, 81);
+}
+
+.cartPage .close:active {
+    background-color: rgb(97, 37, 41);
 }
